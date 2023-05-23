@@ -55,10 +55,13 @@ docker pull <image name>
 ```
 docker images -a
 ```
-- Delete single Image
+- Delete single Image( by force)
 ```
-docker rmi <image id>
+docker rmi <image id> 
+docker rmi --force <image id> 
+
 ```
+
 - All images delete
 ```
 docker rmi $(docker images  -q)
