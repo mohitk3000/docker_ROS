@@ -30,6 +30,14 @@ $ docker stop [container name]
 
 $ docker stop $(docker ps -a -q)
 
+
+#for docker permission
+sudo chmod 666 /var/run/docker.sock
+
+
+#QXcbConnection
+xhost +local:docker
+
     Delete a specific container (only if stopped).
 
 $ docker rm [container name]
