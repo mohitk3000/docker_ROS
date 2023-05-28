@@ -67,6 +67,7 @@ docker images -a
 ```
 docker rmi <image id> 
 docker rmi --force <image id> 
+docker rmi -f 4dbab314d2c5
 
 ```
 
